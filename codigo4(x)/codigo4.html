@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números primos</title>
+</head>
+<body>
+    <script>
+        var numeros = [23,16,11,8,19,14,5,21];
+        var primos = [];
+        numeros.forEach((itens)=>{
+            var divisores = 0;
+            for(var contador = 1; contador <= itens; contador ++){
+                if(itens % contador === 0){
+                    divisores ++
+                }
+            }
+            if(divisores ===2){
+                primos.push(itens);
+            }
+
+        }); 
+        
+        document.write(`Os números primos são ${primos}`);
+
+
+
+    </script>
+    
+</body>
+</html>
