@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('habilidades')">Minhas Habilidades</a></li>
+                <li><a href="#" onclick="showPage('projetos')">Meus Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="page">
+            <h1>Bem-vindo ao meu portfólio!</h1>
+            <p>Esta é a página inicial.</p>
+        </section>
+        <section id="habilidades" class="page" style="display: none;">
+            <h1>Minhas Habilidades</h1>
+            <p>Aqui estão algumas das minhas habilidades.</p>
+        </section>
+        <section id="projetos" class="page" style="display: none;">
+            <h1>Meus Projetos</h1>
+            <p>Aqui estão alguns dos meus projetos.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
